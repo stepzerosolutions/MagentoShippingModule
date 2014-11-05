@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Air Freight for Magento
+ *
+ *
+ * @category    design
+ * @by			Stepzero
+ * @developer	Don Udugala (info@stepzero.solutions)
+-->
+<config>
+	
+    <modules>
+        <Stepzero_Freight>
+            <version>1.0.0</version>
+        </Stepzero_Freight>
+    </modules>
+
+
+    <global>
+	
+        <helpers>
+            <stepzero_freight>
+                <class>Stepzero_Freight_Helper</class>
+            </stepzero_freight>
+        </helpers>
+		
+		
+		<models>
+			<stepzero_freight>
+				<class>Stepzero_Freight_Model</class>
+			</stepzero_freight>
+		</models>
+	</global>
+	
+    <default>
+        <carriers>
+            <stepzero_freight>
+				<active>1</active>
+                <model>stepzero_freight/carrier_freight</model>
+                <title>Freight</title>
+                <sort_order>10</sort_order>
+                <sallowspecific>0</sallowspecific>
+            </stepzero_freight>
+        </carriers>
+    </default>
+	
+</config>
